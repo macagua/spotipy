@@ -21,10 +21,10 @@ if token:
     sp.trace = False
     ranges = ['short_term', 'medium_term', 'long_term']
     for range in ranges:
-        print "range:", range
+        print("range:", range)
         results = sp.current_user_top_tracks(time_range=range, limit=50)
         for i, item in enumerate(results['items']):
-            print i, item['name'], '//', item['artists'][0]['name']
+            print(i, item['name'], '//', item['artists'][0]['name'])
         print
         
 else:

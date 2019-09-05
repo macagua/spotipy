@@ -50,7 +50,7 @@ def make_chain(word):
         songs = find_songs_that_start_with_word(word)
         if len(songs) > 0:
             song = random.choice(songs)
-            print which, song['name'] + " by " + song['artists'][0]['name']
+            print(which, song['name'] + " by " + song['artists'][0]['name'])
             which += 1
             word = song['name'].lower().split()[-1]
         else:
